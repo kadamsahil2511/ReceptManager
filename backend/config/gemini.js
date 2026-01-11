@@ -6,8 +6,8 @@ let chatModel = null;
 
 export const initGemini = () => {
   genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  visionModel = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-  chatModel = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  visionModel = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+  chatModel = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
   console.log('✅ Gemini AI Initialized');
 };
 
